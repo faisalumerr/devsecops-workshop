@@ -14,7 +14,11 @@ jobs:
     # Build
     - name: Build Docker image
       run: |
-        docker build -t ghcr.io/${{ github.repository_owner }}/devsecops-app:latest .
+        docker build \
+          -t ghcr.io/${{ github.repository_owner }}/devsecops-app:latest \
+          -f app/Dockerfile \
+          app/
+
 
     # Scan
     - name: Scan image with Trivy
