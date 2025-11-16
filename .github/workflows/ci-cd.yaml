@@ -60,7 +60,7 @@ jobs:
           --docker-server=ghcr.io \
           --docker-username=faisalumerr \
           --docker-password=${{ secrets.GHCR_PAT }} \
-          --docker-email=dummy@example.com
+          --docker-email=faisal@example.com
 
     # ------------------
     # PATCH DEPLOYMENT TO USE IMAGEPULLSECRET
